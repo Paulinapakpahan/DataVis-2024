@@ -6,13 +6,13 @@ import plotly.express as px
 
 # Menampilkan teks 
 st.subheader("VISUALISASI DATA")
-st.write("Dhavina Ocxa Dwiyantie (21082010136)")
+st.write("Paulina April R Pakpahan (21082010241)")
 
 st.subheader("")
 st.subheader("Scatter Plot")
 # 1
 # reading the database
-data = pd.read_csv("https://raw.githubusercontent.com/dhavinaocxa/davis-2024/main/tips.csv")
+data = pd.read_csv("https://raw.githubusercontent.com/Paulinapakpahan/DataVis-2024/blob/main/tips.csv")
 
 # Scatter plot with day against tip
 fig, ax = plt.subplots()
