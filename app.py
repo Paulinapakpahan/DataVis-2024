@@ -43,3 +43,17 @@ fig = px.line(data, y='tip', color='sex')
 
 # showing the plot
 st.plotly_chart(fig)
+
+st.subheader("")
+st.subheader("Histogram")
+# 4
+# draw histogram
+fig, ax = plt.subplots()
+sns.histplot(data['total_bill'], bins=20, kde=True, ax=ax)
+
+# Setting the X and Y labels
+plt.xlabel('Total Bill')
+plt.ylabel('Frequency')
+
+# showing the plot
+st.pyplot(fig)
